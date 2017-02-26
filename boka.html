@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Text type -->
+    <meta charset="utf-8">
+    <!-- Screen size and Zoom -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Hotel - Boka</title>
+    <!-- Css Linking -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="mall.css" rel="stylesheet"> </head>
+
+<body>
+    <!-- Navbar -->
+    <header> <img src="images/molnLogga.png" alt="Moln"> </header>
+    <nav class="navbar navbar-inverse navbar-static-top">
+        <div class="container"> <a href="#" class="navbar-brand Text-black">Flight Hotel</a>
+            <!-- Button when smaller screen -->
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            <div class="collapse navbar-collapse navHeaderCollapse">
+                <ul class="nav navbar-nav navbar-right ">
+                    <!-- Sites -->
+                    <li><a href="index.html" class="Text-black">Home</a></li>
+                    <li class="active Bg-Blue"><a href="boka.html" class="Bg-Blue">Boka</a></li>
+                    <li><a href="hitta.html" class="Text-black">Hitta</a></li>
+                    <li><a href="kontakta.html" class="Text-black">Kontakta</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="jumbotron">
+                <h1 class="display-3">Boka Rum</h1>
+                <p>Antal rum</p>
+                <div class="row">
+                    <div class="col-xs-3">
+                        <div class="form-group">
+                            <select class="selectpicker form-control">
+                                <option>1 rum</option>
+                                <option>2 rum</option>
+                                <option>3 rum</option>
+                                <option>4 rum</option>
+                                <option>5 rum</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <p>Antal personer per rum</p>
+                <div class="row">
+                    <div class="col-xs-3">
+                        <div class="form-group">
+                            <select class="selectpicker form-control">
+                                <option>1 pers/rum</option>
+                                <option>2 pers/rum</option>
+                                <option>3 pers/rum</option>
+                                <option>4 pers/rum</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <p>Datum</p>
+                <input type="text" name="daterange" value="01/01/2015 - 01/31/2015" />
+                <script type="text/javascript">
+                    $(function () {
+                        $('input[name="daterange"]').daterangepicker();
+                    });
+                </script>
+                <p></p>
+                <button type="button" class="btn btn-default">Boka</button>
+            </div>
+        </div>
+    </div>
+    <!-- Footer with info -->
+    <div class="navbar navbar-default navbar-static-bottom Margin-0">
+        <div class="container">
+            <footer class="footer">
+                <p>Flight Hotel - Live in the clouds</p>
+            </footer>
+        </div>
+    </div>
+    <!-- Script linking -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/moment.min.js"></script>
+</body>
+
+</html>
