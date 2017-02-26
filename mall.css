@@ -1,0 +1,43 @@
+header img {
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    background-color: #B5E0F5;
+}
+
+nav {
+    background-color: #59AFD8 !important;
+}
+
+.Bg-Blue {
+    background-color: #187EB0 !important;
+}
+
+.Text-black {
+    color: black !important;
+}
+
+nav a:hover {
+    color: whitesmoke !important;
+    text-shadow: 0 0 0.01em white, 0 0 0.01em white, 0 0 0.01em white
+}
+
+footer {
+    text-align: center;
+}
+
+.Margin-0 {
+    margin: 0;
+}
+
+#map-container {
+    height: 300px;
+}
+
+.height {
+    height: 450px;
+}
